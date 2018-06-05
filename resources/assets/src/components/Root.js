@@ -25,7 +25,7 @@ class Root extends React.Component {
             dataType: 'json',
             crossDomain: true,
             success: function(response) {
-                this.setStat({
+                this.setState({
                     currencies: response
                 })
             }.bind(this)
