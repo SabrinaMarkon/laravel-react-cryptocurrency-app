@@ -25,7 +25,7 @@ if($('#root').length) {
     ReactDOM.render(
         <BrowserRouter>
             <Root/>
-        </BrowserRouter>
-        document.getElementById('root');
+        </BrowserRouter>,
+        document.getElementById('root')
     );
 }

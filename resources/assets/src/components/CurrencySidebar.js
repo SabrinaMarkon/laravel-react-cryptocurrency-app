@@ -7,7 +7,7 @@ class CurrencySlider extends React.Component {
         super(props);
         this.state = {
             currencies: this.props.currencies
-        }
+        };
     }
 
     /* We are implementing  componentWillReceiveProps() lifecycle method because on the initial render props will be empty. */

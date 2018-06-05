@@ -10,7 +10,7 @@ class Root extends React.Component {
         super(props);
         this.state = {
             currencies: []
-        }
+        };
         /* using coinmarketcap API here to fetch cryptocurrencies data. */
         this.api_url = 'https://api.coinmarketcap.com/v1/ticker/?limit=20';
     }
@@ -27,7 +27,7 @@ class Root extends React.Component {
             success: function(response) {
                 this.setState({
                     currencies: response
-                })
+                });
             }.bind(this)
         });
     }

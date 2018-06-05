@@ -6,7 +6,7 @@ class Currency extends React.Component {
         super(props);
         this.state = {
             currency: ''
-        }
+        };
         this.api_url = 'https://api.coinmarketcap.com/v1/ticker/';
     }
 
@@ -45,58 +45,58 @@ class Currency extends React.Component {
                             <h1 className="display-2">
                                 {this.state.currency.name}
                             </h1>
-                        </div>
-                        <dl className="row">
-                                <dt className="col-sm-3">Symbol</dt>
-                                <dd className="col-sm-9">
-                                    {this.state.currency.symbol}
-                                </dd>
-                                <dt className="col-sm-3">Rank</dt>
-                                <dd className="col-sm-9">
-                                    {this.state.currency.rank}
-                                </dd>
+                            <dl className="row">
+                                    <dt className="col-sm-3">Symbol</dt>
+                                    <dd className="col-sm-9">
+                                        {this.state.currency.symbol}
+                                    </dd>
+                                    <dt className="col-sm-3">Rank</dt>
+                                    <dd className="col-sm-9">
+                                        {this.state.currency.rank}
+                                    </dd>
 
-                                <dt className="col-sm-3">Price USD</dt>
-                                <dd className="col-sm-9">
-                                    {this.state.currency.price_usd}
-                                </dd>
-                                <dt className="col-sm-3">Price BTC</dt>
-                                <dd className="col-sm-9">
-                                    {this.state.currency.price_btc}
-                                </dd>
-                                <dt className="col-sm-3">24H Volume USD</dt>
-                                <dd className="col-sm-9">
-                                    {this.state.currency['24h_volume_usd']}
-                                </dd>
-                                <dt className="col-sm-3">Market Cap USD</dt>
-                                <dd className="col-sm-9">
-                                    {this.state.currency.market_cap_usd}
-                                </dd>
-                                <dt className="col-sm-3">Available Supply</dt>
-                                <dd className="col-sm-9">
-                                    {this.state.currency.available_supply}
-                                </dd>
-                                <dt className="col-sm-3">Total Supply</dt>
-                                <dd className="col-sm-9">
-                                    {this.state.currency.total_supply}
-                                </dd>
-                                <dt className="col-sm-3">Max Supply</dt>
-                                <dd className="col-sm-9">
-                                    {this.state.currency.max_supply}
-                                </dd>
-                                <dt className="col-sm-3">Percentage Change 1H</dt>
-                                <dd className="col-sm-9">
-                                    {this.state.currency.percent_change_1h}
-                                </dd>
-                                <dt className="col-sm-3">Percentage Change 24H</dt>
-                                <dd className="col-sm-9">
-                                    {this.state.currency.percent_change_24h}
-                                </dd>
-                                <dt className="col-sm-3">Percentage Change 7D</dt>
-                                <dd className="col-sm-9">
-                                    {this.state.currency.percent_change_7d}
-                                </dd>
-                            </dl>
+                                    <dt className="col-sm-3">Price USD</dt>
+                                    <dd className="col-sm-9">
+                                        {this.state.currency.price_usd}
+                                    </dd>
+                                    <dt className="col-sm-3">Price BTC</dt>
+                                    <dd className="col-sm-9">
+                                        {this.state.currency.price_btc}
+                                    </dd>
+                                    <dt className="col-sm-3">24H Volume USD</dt>
+                                    <dd className="col-sm-9">
+                                        {this.state.currency['24h_volume_usd']}
+                                    </dd>
+                                    <dt className="col-sm-3">Market Cap USD</dt>
+                                    <dd className="col-sm-9">
+                                        {this.state.currency.market_cap_usd}
+                                    </dd>
+                                    <dt className="col-sm-3">Available Supply</dt>
+                                    <dd className="col-sm-9">
+                                        {this.state.currency.available_supply}
+                                    </dd>
+                                    <dt className="col-sm-3">Total Supply</dt>
+                                    <dd className="col-sm-9">
+                                        {this.state.currency.total_supply}
+                                    </dd>
+                                    <dt className="col-sm-3">Max Supply</dt>
+                                    <dd className="col-sm-9">
+                                        {this.state.currency.max_supply}
+                                    </dd>
+                                    <dt className="col-sm-3">Percentage Change 1H</dt>
+                                    <dd className="col-sm-9">
+                                        {this.state.currency.percent_change_1h}
+                                    </dd>
+                                    <dt className="col-sm-3">Percentage Change 24H</dt>
+                                    <dd className="col-sm-9">
+                                        {this.state.currency.percent_change_24h}
+                                    </dd>
+                                    <dt className="col-sm-3">Percentage Change 7D</dt>
+                                    <dd className="col-sm-9">
+                                        {this.state.currency.percent_change_7d}
+                                    </dd>
+                                </dl>
+                            </div>
                             :
                             <div>Loading Currency</div>
                 }
