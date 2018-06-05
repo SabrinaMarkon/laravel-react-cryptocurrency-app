@@ -1,7 +1,12 @@
+#root {
+    display: flex;
+    flex-direction: row; // default (col is up/down)
+    justify-content: flex-start;
+}
+
 .currency, .currencies{
-    padding : 0px;
-    display: inline-block;
-    // float:left;
+    padding : 10px 10px;
+    flex: 1;
   }
 
   .currencies{

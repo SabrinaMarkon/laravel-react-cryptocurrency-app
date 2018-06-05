@@ -2,7 +2,7 @@ import React from 'react';
 import {Route} from 'react-router';
 import CurrencySidebar from './CurrencySidebar';
 import Currency from './Currency';
-import './Currencies.scss';
+import '../Currencies.scss';
 
 class Root extends React.Component {
 
@@ -34,9 +34,9 @@ class Root extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="row">
                 <Route path="/" render={(props) => (
-                    <CurrencySlider
+                    <CurrencySidebar
                         currencies={this.state.currencies}
                         {...props}
                         />

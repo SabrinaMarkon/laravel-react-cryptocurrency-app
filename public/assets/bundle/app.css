@@ -6285,5 +6285,35 @@ a.text-dark:hover, a.text-dark:focus {
 .navbar-laravel {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04); }
+#root {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; }
+
+.currency, .currencies {
+  padding: 10px 10px;
+  flex: 1; }
+
+.currencies {
+  background-color: black; }
+  .currencies li {
+    height: 50px;
+    list-style: none;
+    width: 100%; }
+    .currencies li a {
+      text-decoration: none;
+      padding: 15px;
+      display: block;
+      width: 100%;
+      height: 100%;
+      color: white; }
+      .currencies li a .fa {
+        margin-right: 5px; }
+      .currencies li a:hover, .currencies li a.active {
+        color: black;
+        background-color: white; }
+
+.currency h1, .currency .row {
+  margin-left: 20px; }
 
 /*# sourceMappingURL=app.css.map*/
