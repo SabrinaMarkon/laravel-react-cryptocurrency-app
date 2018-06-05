@@ -1,16 +1,10 @@
 <?php
 
 /*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
+A route to serve the app.blade.php view against every incoming request and including all the necessary scripts to bootstrap our SPA so that react router can take care of routing and rendering of React components.
+(Ahmad, 2018)
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('{all?}', function () {
+    return view('app');
+})->where('all', '([A-z\d-\/_.]+)?');
